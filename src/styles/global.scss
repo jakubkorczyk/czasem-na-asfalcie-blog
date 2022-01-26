@@ -1,4 +1,8 @@
-$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap');
+$heading-font: 'Titillium Web', sans-serif;
+$body-font: 'Oxygen', sans-serif;
 
 html,
 body {
@@ -8,38 +12,18 @@ body {
 * {
   margin-top: 0
 }
-body.light {
-  --primary-color: #381696;
-  --primary-text-color: #fff;
-  --featured-bg: #493b8a;
-  --featured-text: #fff;
-  --secondary-color: #10072b;
-  --background: #fff;
-  --site-header: var(--background);
-  --card-bg: #fff;
-  --card-bdr: #eee;
-  --card-shadow: #d5d5d5;
-  --btn-bg: var(--background);
-  --btn-bdr: #d3d6e7;
-  --btn-text-color: #868892;
-  --btn-hover-bg: var(--btn-bdr);
-  --btn-hover-text-color: #00062b;
-  --contact-bg: #f7f8fe;
-  --contact-bdr: #d3d6e7;
-  --input-bg: var(--background);
-}
 body.dark {
-  --primary-color: #9984d5;
+  --primary-color: #3D788A;
   --primary-text-color: #fff;
-  --featured-bg: #66578d;
+  --featured-bg: #9FC9D6;
   --featured-text: #fff;
-  --secondary-color: #66578d;
-  --background: #0A041A;
+  --secondary-color: #9FC9D6;
+  --background: #222629;
   --text-color: rgba(255,255,255,0.88);
   --text-secondary-color: rgba(255,255,255,0.66);
   --site-header: var(--background);
-  --card-bg: #181326;
-  --card-bdr: #181326;
+  --card-bg: #222629;
+  --card-bdr: #222629;
   --card-shadow: #020204;
   --btn-bg: var(--background);
   --btn-bdr: #d3d6e7;
@@ -50,9 +34,12 @@ body.dark {
   --contact-bdr: var(--card-bg);
   --input-bg: var(--card-bg);
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font
+}
 /* System Fonts as used by Medium and WordPress */
 body {
-  font-family: $font-family;
+  font-family: $body-font;
   border-top: 10px solid var(--primary-color);
   background-color: var(--background);
   color: var(--text-color);
@@ -75,14 +62,14 @@ a {
 .navigation {
   display: flex;
   align-items: center;
-  font-weight: 300;
+  font-weight: 200;
   a {
     color: #888;
     text-decoration: none;
     margin: 0 8px 0;
     &[aria-current] {
       color: var(--primary-color);
-      font-weight: 700;
+      font-weight: 600;
     }
     &:hover {
       color: var(--primary-color);
@@ -103,7 +90,7 @@ a {
 .site-title a {
   color: var(--primary-color);
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .hero-header {
@@ -112,7 +99,7 @@ a {
 }
 .headline {
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .button {
@@ -124,7 +111,7 @@ a {
   text-decoration: none;
   color: var(--btn-text-color);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   margin: 0 20px 0 0;
   transition: background-color .3s linear;
   &.-primary {
@@ -146,7 +133,7 @@ a {
   font-size: 18px;
   margin-bottom: 32px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 200;
 }
 .post {
   padding: 0;
@@ -281,7 +268,7 @@ a {
     width: calc(100% - 24px);
     margin-bottom: 1.5rem;
     background-color: var(--input-bg);
-    font-family: $font-family;
+    font-family: $body-font;
   }
   textarea {
     margin-bottom: 2rem;
