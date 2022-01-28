@@ -9,5 +9,6 @@ post-tags:
   - relacje
   - cośtam
   - i jeszcze jedno
+  - kolejny
 ---
 No i idzie jesień jak to możliwe?
