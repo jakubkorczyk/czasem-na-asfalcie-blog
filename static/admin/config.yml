@@ -71,9 +71,7 @@ collections:
         media_library:
           config:
             multiple: false
-      - label: "Tags"
-        name: "post-tags"
-        widget: "list"
-        max: 3
-        min: 1
+      - label: Tags
+        name: tags
+        widget: list
       - { name: body, label: Body, widget: markdown }
