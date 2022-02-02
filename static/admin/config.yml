@@ -71,7 +71,11 @@ collections:
         media_library:
           config:
             multiple: false
-      - label: Tags
-        name: tags
-        widget: list
+      - label: "Testimonials"
+        name: "testimonials"
+        minimize_collapsed: true
+        widget: "list"
+        fields:
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+          - {label: Author, name: author, widget: string }
       - { name: body, label: Body, widget: markdown }
