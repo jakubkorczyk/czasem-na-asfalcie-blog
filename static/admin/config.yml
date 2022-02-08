@@ -91,4 +91,4 @@ collections:
                 widget: list
                 fields:
                   - { label: "Second Level Subtag", name: secondLevelSubtag, widget: string }
-        - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: markdown }
