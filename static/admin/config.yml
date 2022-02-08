@@ -79,5 +79,11 @@ collections:
         widget: "list"
         fields:
           - { label: Tag, name: tag, widget: string }
-          - { label: Subtag, name: subtag, widget: string }
+          - { label: Subtags, name: subtags, widget: list, fields:
+            - { label: Subtag, name: subtag, widget: string }
+            - { label: "Second Level Subtags", name: secondLevelSubtags, widget: list, fields: {
+              - { label: "Second Level Subtag", name: secondLevelSubtag, widget: string }
+              }
+            }
+          }
       - { name: body, label: Body, widget: markdown }
