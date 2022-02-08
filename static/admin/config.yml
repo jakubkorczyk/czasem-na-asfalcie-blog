@@ -5,6 +5,8 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 
+local_backend: true
+
 collections:
   - name: settings
     label: Settings
@@ -71,11 +73,11 @@ collections:
         media_library:
           config:
             multiple: false
-      - label: "Testimonials"
-        name: "testimonials"
+      - label: "Tags"
+        name: "tags"
         minimize_collapsed: true
         widget: "list"
         fields:
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-          - {label: Author, name: author, widget: string }
+          - { label: Tag, name: tag, widget: string }
+          - { label: Subtag, name: subtag, widget: string }
       - { name: body, label: Body, widget: markdown }
